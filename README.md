@@ -9,6 +9,7 @@ Mes premiers sites, réalisés dans le cours de **création de sites web** (Cég
 | Projet | Description | Notions |
 |---|---|---|
 | [`mars`](mars) | Mini site scientifique sur Mars : ajout de faits, couleur qui alterne, texte au survol et quiz | JavaScript, DOM, événements |
+| [`boutique`](boutique) | Boutique de vêtements fictive en 3 pages : produits en vedette, catalogue et formulaire de commande | HTML, navigation, tableaux, formulaires, vidéo intégrée |
 | [`cookies-and-crumble`](cookies-and-crumble) | Site d'une boutique de cookies fictive : menu, heures d'ouverture, prix et formulaire de commande | HTML, listes, tableaux, formulaires |
 
 ## Voir les sites
