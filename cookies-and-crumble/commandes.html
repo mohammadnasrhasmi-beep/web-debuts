@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commandes · Cookies &amp; Crumble</title>
+</head>
+<body>
+    <p><a href="index.html">← Retour à l'accueil</a></p>
+    <h1>Commandes</h1>
+
+    <h2>Liste des prix</h2>
+    <table border="1">
+        <tr><th>Produit</th><th>Unité</th><th>Douzaine</th></tr>
+        <tr><td>Cookie</td><td>3 $</td><td>30 $</td></tr>
+        <tr><td>Cupcake</td><td>4 $</td><td>40 $</td></tr>
+        <tr><td>Boisson</td><td>5 $</td><td>50 $</td></tr>
+    </table>
+
+    <h2>Formulaire de commande</h2>
+    <form>
+        <label for="nom">Nom de famille</label><br>
+        <input type="text" id="nom" required><br><br>
+
+        <label for="prenom">Prénom</label><br>
+        <input type="text" id="prenom" required><br><br>
+
+        <label for="courriel">Adresse courriel</label><br>
+        <input type="email" id="courriel"><br><br>
+
+        <label for="livraison">Date de livraison</label><br>
+        <input type="date" id="livraison"><br><br>
+
+        <p><strong>Sélectionnez votre premier choix</strong></p>
+        <input type="radio" id="cookie" name="choix">
+        <label for="cookie">Cookie</label><br>
+        <input type="radio" id="cupcake" name="choix">
+        <label for="cupcake">Cupcake</label><br>
+        <input type="radio" id="boisson" name="choix">
+        <label for="boisson">Boisson</label><br><br>
+
+        <label for="quantite">Quantité</label><br>
+        <input type="number" id="quantite" min="1" max="40" value="1"><br><br>
+
+        <button type="submit">Commander</button>
+    </form>
+</body>
+</html>

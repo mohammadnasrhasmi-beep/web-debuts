@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Exploration de Mars – Mini Site Scientifique</title>
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    color: #222;
+  }
+
+  header {
+    background: #b02a30;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  section {
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    color: #b02a30;
+    margin-bottom: 10px;
+  }
+
+  #fact-list li {
+    background: #ffecec;
+    padding: 6px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+
+  #color-box {
+    width: 220px;
+    height: 80px;
+    background: #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  input, button {
+    padding: 6px;
+    margin-top: 5px;
+  }
+
+  button {
+    background: #b02a30;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #8a1f25;
+  }
+
+  footer {
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+    color: #555;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Exploration de Mars</h1>
+  <p>Un mini site scientifique pour expérimenter le DOM</p>
+</header>
+
+<main>
+
+  <section id="intro-section">
+    <h2>Introduction</h2>
+    <p>Mars, souvent appelée "la planète rouge", est un objet d’étude majeur pour la recherche spatiale. 
+    Sa surface, son atmosphère et ses traces d'eau passées en font une candidate fascinante pour l’exploration.</p>
+  </section>
+
+  <section id="facts-section">
+    <h2>Faits scientifiques</h2>
+    <ul id="fact-list">
+      <li>La température moyenne sur Mars est de -63°C.</li>
+      <li>Mars possède le plus grand volcan du système solaire : Olympus Mons.</li>
+      <li>Un jour martien dure 24h 37min.</li>
+    </ul>
+    <input type="text" id="new-fact-input" placeholder="Ajouter un fait scientifique...">
+    <button id="add-fact-btn" onclick="ajouterFait()">Ajouter le fait</button>
+  </section>
+
+  <section id="color-section">
+    <h2>Couleur martienne</h2>
+    <div id="color-box">Mars</div>
+    <button id="color-btn" onclick="changerCouleur()">Changer la couleur</button>
+  </section>
+
+  <section id="quiz-section">
+    <h2>Mini questionnaire</h2>
+    <p>Quel est le nom du plus grand volcan martien ?</p>
+    <input type="text" id="quiz-input" placeholder="Votre réponse...">
+    <button id="quiz-btn" onclick="verifierfait()">Vérifier</button>
+    <p id="quiz-result"></p>
+  </section>
+
+</main>
+
+<footer>
+  Mini site scientifique — Atelier DOM
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
